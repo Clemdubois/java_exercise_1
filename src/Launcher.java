@@ -4,14 +4,10 @@ public class Launcher {
     public static void main(String[] args) {
         System.out.println("Bienvenue sur le terminal de monsieur roule.");
         Scanner sc = new Scanner(System.in);
-        String i = sc.next();
 
-        if(i.compareTo("quit") == 0){
-            System.out.println("Sortie classique");
-        }
-        else{
+        while(sc.next().compareTo("quit") != 0){
             System.out.println("Unknown Command");
         }
-
+        System.out.println("Sortie classique");
     }
 }
